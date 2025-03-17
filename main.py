@@ -23,85 +23,86 @@ np.random.seed(sample_seed)"""  # for sampling in a dataset
 high-density cart change seed:49
 dataset: x264_15.csv
 """
-env_list1 = ["data\\drift_data\\data1\\sac_2.csv",
-             "data\\drift_data\\data1\\sac_4.csv",
-             "data\\drift_data\\data1\\sac_5.csv",
-             "data\\drift_data\\data1\\sac_6.csv",
-             "data\\drift_data\\data1\\sac_7.csv",
-             "data\\drift_data\\data1\\sac_8.csv",
-             "data\\drift_data\\data1\\sac_9.csv"]
+env_list1 = ["drift_data\\data1\\sac_2.csv",
+             "drift_data\\data1\\sac_4.csv",
+             "drift_data\\data1\\sac_5.csv",
+             "drift_data\\data1\\sac_6.csv",
+             "drift_data\\data1\\sac_7.csv",
+             "drift_data\\data1\\sac_8.csv",
+             "drift_data\\data1\\sac_9.csv"]
 
-env_list2 = ["data\\drift_data\\data2\\x264_0.csv",
-             "data\\drift_data\\data2\\x264_1.csv",
-             "data\\drift_data\\data2\\x264_2.csv",
-             "data\\drift_data\\data2\\x264_3.csv",
-             "data\\drift_data\\data2\\x264_4.csv",
-             "data\\drift_data\\data2\\x264_5.csv",
-             "data\\drift_data\\data2\\x264_6.csv",
-             "data\\drift_data\\data2\\x264_7.csv",
-             "data\\drift_data\\data2\\x264_8.csv",
-             "data\\drift_data\\data2\\x264_9.csv",
-             "data\\drift_data\\data2\\x264_10.csv",
-             "data\\drift_data\\data2\\x264_11.csv",
-             "data\\drift_data\\data2\\x264_12.csv",
-             "data\\drift_data\\data2\\x264_13.csv",
-             "data\\drift_data\\data2\\x264_14.csv",
-             "data\\drift_data\\data2\\x264_15.csv",
-             "data\\drift_data\\data2\\x264_16.csv",
-             "data\\drift_data\\data2\\x264_17.csv",
-             "data\\drift_data\\data2\\x264_18.csv",
-             "data\\drift_data\\data2\\x264_19.csv",
-             "data\\drift_data\\data2\\x264_20.csv", ]
+env_list2 = ["drift_data\\data2\\x264_0.csv",
+             "drift_data\\data2\\x264_1.csv",
+             "drift_data\\data2\\x264_2.csv",
+             "drift_data\\data2\\x264_3.csv",
+             "drift_data\\data2\\x264_4.csv",
+             "drift_data\\data2\\x264_5.csv",
+             "drift_data\\data2\\x264_6.csv",
+             "drift_data\\data2\\x264_7.csv",
+             "drift_data\\data2\\x264_8.csv",
+             "drift_data\\data2\\x264_9.csv",
+             "drift_data\\data2\\x264_10.csv",
+             "drift_data\\data2\\x264_11.csv",
+             "drift_data\\data2\\x264_12.csv",
+             "drift_data\\data2\\x264_13.csv",
+             "drift_data\\data2\\x264_14.csv",
+             "drift_data\\data2\\x264_15.csv",
+             "drift_data\\data2\\x264_16.csv",
+             "drift_data\\data2\\x264_17.csv",
+             "drift_data\\data2\\x264_18.csv",
+             "drift_data\\data2\\x264_19.csv",
+             "drift_data\\data2\\x264_20.csv", ]
 
-env_list3 = ["data\\drift_data\\data3\\storm-obj1_feature6.csv",
-             "data\\drift_data\\data3\\storm-obj1_feature7.csv",
-             "data\\drift_data\\data3\\storm-obj1_feature8.csv",
-             "data\\drift_data\\data3\\storm-obj2_feature9.csv",
-             "data\\drift_data\\data3\\storm-obj2_feature6.csv",
-             "data\\drift_data\\data3\\storm-obj1_feature7.csv",
-             "data\\drift_data\\data3\\storm-obj2_feature8.csv",
-             "data\\drift_data\\data3\\storm-obj2_feature9.csv"]
+env_list3 = ["drift_data\\data3\\storm-obj1_feature6.csv",
+             "drift_data\\data3\\storm-obj1_feature7.csv",
+             "drift_data\\data3\\storm-obj1_feature8.csv",
+             "drift_data\\data3\\storm-obj2_feature9.csv",
+             "drift_data\\data3\\storm-obj2_feature6.csv",
+             "drift_data\\data3\\storm-obj1_feature7.csv",
+             "drift_data\\data3\\storm-obj2_feature8.csv",
+             "drift_data\\data3\\storm-obj2_feature9.csv"]
 
-env_list4 = ["data\\drift_data\\data4\\spear_0.csv",
-             "data\\drift_data\\data4\\spear_1.csv",
-             "data\\drift_data\\data4\\spear_2.csv",
-             "data\\drift_data\\data4\\spear_3.csv",
-             "data\\drift_data\\data4\\spear_4.csv",
-             "data\\drift_data\\data4\\spear_5.csv",
-             "data\\drift_data\\data4\\spear_6.csv",
-             "data\\drift_data\\data4\\spear_7.csv",
-             "data\\drift_data\\data4\\spear_8.csv",
-             "data\\drift_data\\data4\\spear_9.csv"]
+env_list4 = ["drift_data\\data4\\spear_0.csv",
+             "drift_data\\data4\\spear_1.csv",
+             "drift_data\\data4\\spear_2.csv",
+             "drift_data\\data4\\spear_3.csv",
+             "drift_data\\data4\\spear_4.csv",
+             "drift_data\\data4\\spear_5.csv",
+             "drift_data\\data4\\spear_6.csv",
+             "drift_data\\data4\\spear_7.csv",
+             "drift_data\\data4\\spear_8.csv",
+             "drift_data\\data4\\spear_9.csv"]
 
-env_list5 = ["data\\drift_data\\data5\\sqlite_10.csv",
-             "data\\drift_data\\data5\\sqlite_11.csv",
-             "data\\drift_data\\data5\\sqlite_16.csv",
-             "data\\drift_data\\data5\\sqlite_17.csv",
-             "data\\drift_data\\data5\\sqlite_18.csv",
-             "data\\drift_data\\data5\\sqlite_19.csv",
-             "data\\drift_data\\data5\\sqlite_44.csv",
-             "data\\drift_data\\data5\\sqlite_45.csv",
-             "data\\drift_data\\data5\\sqlite_52.csv",
-             "data\\drift_data\\data5\\sqlite_59.csv",
-             "data\\drift_data\\data5\\sqlite_73.csv",
-             "data\\drift_data\\data5\\sqlite_79.csv",
-             "data\\drift_data\\data5\\sqlite_94.csv",
-             "data\\drift_data\\data5\\sqlite_96.csv",
-             "data\\drift_data\\data5\\sqlite_97.csv"]
+env_list5 = ["drift_data\\data5\\sqlite_10.csv",
+             "drift_data\\data5\\sqlite_11.csv",
+             "drift_data\\data5\\sqlite_16.csv",
+             "drift_data\\data5\\sqlite_17.csv",
+             "drift_data\\data5\\sqlite_18.csv",
+             "drift_data\\data5\\sqlite_19.csv",
+             "drift_data\\data5\\sqlite_44.csv",
+             "drift_data\\data5\\sqlite_45.csv",
+             "drift_data\\data5\\sqlite_52.csv",
+             "drift_data\\data5\\sqlite_59.csv",
+             "drift_data\\data5\\sqlite_73.csv",
+             "drift_data\\data5\\sqlite_79.csv",
+             "drift_data\\data5\\sqlite_94.csv",
+             "drift_data\\data5\\sqlite_96.csv",
+             "drift_data\\data5\\sqlite_97.csv"]
 
-env_list6 = ["data\\drift_data\\data6\\nginx1.csv",
-             "data\\drift_data\\data6\\nginx2.csv",
-             "data\\drift_data\\data6\\nginx3.csv",
-             "data\\drift_data\\data6\\nginx4.csv"]
+env_list6 = ["drift_data\\data6\\nginx1.csv",
+             "drift_data\\data6\\nginx2.csv",
+             "drift_data\\data6\\nginx3.csv",
+             "drift_data\\data6\\nginx4.csv"]
 
-env_list7 = ["data\\drift_data\\data7\\exastencils1.csv",
-             "data\\drift_data\\data7\\exastencils2.csv",
-             "data\\drift_data\\data7\\exastencils3.csv",
-             "data\\drift_data\\data7\\exastencils4.csv"]
+env_list7 = ["drift_data\\data7\\exastencils1.csv",
+             "drift_data\\data7\\exastencils2.csv",
+             "drift_data\\data7\\exastencils3.csv",
+             "drift_data\\data7\\exastencils4.csv"]
 
-env_list8 = ["data\\drift_data\\data8\\deeparch1.csv",
-             "data\\drift_data\\data8\\deeparch2.csv",
-             "data\\drift_data\\data8\\deeparch3.csv"]
+env_list8 = ["drift_data\\data8\\deeparch1.csv",
+             "drift_data\\data8\\deeparch2.csv",
+             "drift_data\\data8\\deeparch3.csv"
+             ]
 
 
 if __name__ == "__main__":
@@ -124,7 +125,6 @@ if __name__ == "__main__":
                                     min_occupation=min_sampling_ratio, max_occupation=max_sampling_ratio,
                                     max_count=max_count, regressor=regressor)
         y = list()
-        init_train_count = 0
         dataset_name = env_list[0].split('\\')[-1]
         print("the datasets are...")
         x_train = raw['x_train']
