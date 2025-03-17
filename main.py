@@ -167,5 +167,6 @@ if __name__ == "__main__":
         print(f"run time {t}: mMape = {DHDA_mMAPE}, Time cost = {time_cost}")
         result["mMAPE"].append(DHDA_mMAPE)
         result["Time_cost"].append(time_cost)
-    result = pd.DataFrame(result)
-    result.to_csv(save_path)
+    if save_file:
+        result = pd.DataFrame(result)
+        result.to_csv(save_path)
