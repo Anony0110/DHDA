@@ -1,0 +1,10 @@
+imbalanced-learn=0.10.1
+keras=2.10.0
+numpy=1.22.4
+pandas=2.2.3
+python=3.9.15
+river=0.21.2
+rpy2=3.5.11
+scikit-learn=1.2.2
+scikit-multiflow=0.5.3
+tensorflow=2.10.0
