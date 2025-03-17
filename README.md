@@ -14,7 +14,9 @@ This repository contains the data and code for the following paper:
 This repository contains the **key codes**, **full data used**, **raw experiment results**, and **the supplementary tables** for the paper.
 
 # Documents
-
+- **base_model**:
+local model used in DHDA
+configuration datasets of eight subject systems as specified in the paper.
 - **drift_data**:
 configuration datasets of eight subject systems as specified in the paper.
 
