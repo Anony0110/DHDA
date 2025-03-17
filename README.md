@@ -11,7 +11,7 @@ This repository contains the data and code for the following paper:
 >
 > Through evaluating eight software systems and against state-of-the-art approaches, we show that DHDA achieves considerably better accuracy and can effectively adapt to drifts with up to 2.91 times improvements, while incurring reasonable overhead and is able to improve different local models in handling concept drift. 
 
-This repository contains the **key codes**, **full data used**, **raw experiment results**, and **the supplementary tables** for the paper.
+This repository contains the **key codes**, **full data used**, and the **raw experiment results** for the paper.
 
 # Documents
 - **base_model**:
