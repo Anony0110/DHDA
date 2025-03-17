@@ -355,73 +355,6 @@ class DeepPerf(BaseModel):
         return self.model.predict(x)
 
 
-class SeMLPRegressor:
-    def __init__(self):
-        self.model = RandomForestRegressor(warm_start=True, random_state=3)
-        self.meta_model = None
-        self.history_data = []
-
-    def fit(self, x, y):
-        if self.meta_model is None:
-            self.model.fit(x, y)
-        else:
-            self.model = self.meta_model
-            self.model.n_estimators += 100
-            self.model.fit(x, y)
-
-    def predict(self, x):
-        return self.model.predict(x)
-
-    def add_history(self, data):
-        self.history_data.append(data)
-        if len(self.history_data) >= 2:
-            self.meta_model = RandomForestRegressor(warm_start=True, n_estimators=0, random_state=3)
-            sequence = sequence_selection(self.history_data)
-            env_count = len(self.history_data)
-            n_tree = []
-            num = 75
-            for _ in range(env_count):
-                n_tree.append(num)
-                num = max(num // 2, 5)
-
-            n_tree.reverse()
-            for i, env_id in enumerate(sequence):
-                env = self.history_data[env_id]
-                x, y = get_attributes_result(env)
-                self.meta_model.n_estimators += n_tree[i]
-                self.meta_model.fit(x, y)
-
-
-class BEETLERegressor:
-    def __init__(self):
-        self.model = RandomForestRegressor(warm_start=True, random_state=3)
-        self.meta_model = None
-        self.history_data = []
-
-    def fit(self, x, y):
-        if self.meta_model is None:
-            self.model.fit(x, y)
-        else:
-            self.model = self.meta_model
-            self.model.n_estimators += 100
-            self.model.fit(x, y)
-
-    def predict(self, x):
-        return self.model.predict(x)
-
-    def add_history(self, data):
-        self.history_data.append(data)
-        if len(self.history_data) >= 2:
-            self.meta_model = RandomForestRegressor(warm_start=True, n_estimators=0, random_state=3)
-            sequence = sequence_selection(self.history_data)
-            for i, env_id in enumerate(sequence):
-                env = self.history_data[env_id]
-                x, y = get_attributes_result(env)
-                self.meta_model.n_estimators += 50
-                self.meta_model.fit(x, y)
-                continue
-
-
 def build_incremental_model(regressor='RF', model_reuse=True):
     model = None
     if regressor == 'RF':
@@ -434,8 +367,4 @@ def build_incremental_model(regressor='RF', model_reuse=True):
         model = KNNRegression()
     if regressor == 'DeepPerf':
         model = DeepPerf()
-    if regressor == 'SeMLP':
-        model = SeMLPRegressor()
-    if regressor == 'BEETLE':
-        model = BEETLERegressor()
     return model
