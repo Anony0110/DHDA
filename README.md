@@ -16,7 +16,7 @@ This repository contains the **key codes**, **full data used**, **raw experiment
 # Documents
 - **base_model**:
 local model used in DHDA
-configuration datasets of eight subject systems as specified in the paper.
+
 - **drift_data**:
 configuration datasets of eight subject systems as specified in the paper.
 
