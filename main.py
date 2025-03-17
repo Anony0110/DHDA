@@ -14,15 +14,6 @@ from skmultiflow.meta import AdaptiveRandomForestRegressor
 from river.forest import ARFRegressor
 from utils.general import process_training_data
 
-
-dataset_seed = 108
-sample_seed = 17
-"""random.seed(dataset_seed)  # for choose datasets
-np.random.seed(sample_seed)"""  # for sampling in a dataset
-"""
-high-density cart change seed:49
-dataset: x264_15.csv
-"""
 env_list1 = ["drift_data\\data1\\sac_2.csv",
              "drift_data\\data1\\sac_4.csv",
              "drift_data\\data1\\sac_5.csv",
