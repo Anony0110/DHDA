@@ -85,18 +85,19 @@ Below are the repositories of the SOTA performance prediction models, which are 
   A general online learning approach that dynamically creates and updates ensemble models using subsets of features and data patches
 
 # RQ Reproduction
-- [**RQ1**](./result/RQ1-RESULT):
+- [**RQ1**](./results/RQ1-RESULT):
   
   How does DHDA compare to state-of-the-art approachesin terms of accuracy and computational cost?
 
-- [**RQ2**](./result/RQ2-RESULT):
+- [**RQ2**](./results/RQ2-RESULT):
   
   How does DHDA impact different local models used for online performance learning?
   
-- [**RQ3**](./result/RQ3-RESULT):
+- [**RQ3**](./results/RQ3-RESULT):
   
   How do the key designs in DHDA contribute?
 
-- [**RQ4**](./result/RQ4-RESULT): 
+- [**RQ4**](./results/RQ4-RESULT):
+  
   What is the sensitivity of DHDA to its parameter 𝛼?
   
