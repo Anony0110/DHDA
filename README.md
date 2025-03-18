@@ -56,7 +56,7 @@ To run more complicated experiments, alter the codes following the instructions 
 #### To switch between subject systems
     Change the line 110 in main.py
 
-    E.g., to run SeMPL with DeepArch, simply write 'env_list = env_list8'.
+    E.g., to run DHDA with DeepArch, simply write 'env_list = env_list8'.
 
 #### To change the number of experiments for specified sample size(s)
     Change 'run_time' at line 118.
