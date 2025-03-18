@@ -86,14 +86,17 @@ Below are the repositories of the SOTA performance prediction models, which are 
 
 # RQ Reproduction
 - [**RQ1**](./result/RQ1-RESULT):
+  
   How does DHDA compare to state-of-the-art approachesin terms of accuracy and computational cost?
 
 - [**RQ2**](./result/RQ2-RESULT):
+  
   How does DHDA impact different local models used for online performance learning?
   
 - [**RQ3**](./result/RQ3-RESULT):
+  
   How do the key designs in DHDA contribute?
 
-- [**RQ4**](./result/RQ4-RESULT): Use the system **x264**
+- [**RQ4**](./result/RQ4-RESULT): 
   What is the sensitivity of DHDA to its parameter 𝛼?
-   as an example to conduct a case study on the explainability of PromiseTune. The specific data are provided in [data](./RQ_supplementary/RQ4/rules_in_x264.txt).
+  
